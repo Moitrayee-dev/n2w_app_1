@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_1"
+    android:padding="1dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:background="@drawable/round"
+        android:onClick="didTapButton"
+        android:text="@string/calculate"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editText"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round2"
+            android:gravity="center_vertical"
+            android:hint="Numeric"
+            android:inputType="number"
+            android:paddingStart="20dp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.36" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText1"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:background="@drawable/rect"
+        android:hint="Words"
+        android:padding="10dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.786" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/headText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:alpha="0.8"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:text="@string/bottom"
+        android:textAllCaps="false"
+        android:textColor="#ffaa4d"
+        android:textColorHint="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/bottomText"
+        android:layout_width="220dp"
+        android:layout_height="105dp"
+        android:alpha="0.8"
+        android:background="@drawable/rect2"
+        android:gravity="center"
+        android:text="In\nWords"
+        android:textAllCaps="false"
+        android:textColor="#ffaa4d"
+        android:textColorHint="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/bungee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
